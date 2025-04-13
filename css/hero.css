@@ -1,5 +1,5 @@
 #hero .col-3 {
-  grid-column: 3 / span 3;
+  grid-column: 2 / span 3;
 }
 .hero_title {
   display: flex;
@@ -17,7 +17,7 @@
 }
 .hero_bottom .col-2 {
   padding: 0;
-  grid-column: 3 / span 3;
+  grid-column: 2 / span 3;
 }
 @media (max-width: 1000px) {
   #hero .col-3,

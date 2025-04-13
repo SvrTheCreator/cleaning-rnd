@@ -1,5 +1,4 @@
 header .container {
-  /* overflow: hidden; */
   position: relative;
 }
 .burger-nav {
@@ -42,9 +41,11 @@ header .col {
   display: flex;
   align-items: center;
 }
+.header_items a:not(a:last-child) {
+  border-right: 0.5px solid #e0e0e0;
+}
 
 .header_items > * {
-  box-shadow: inset 0 0 0 0.5px #e0e0e0;
   height: 100%;
   width: 100%;
   font-size: 14px;
@@ -100,5 +101,8 @@ header .col {
   }
   header .col-3 {
     grid-column: 2 !important;
+  }
+  .header_items a:not(a:last-child) {
+    border-right: none;
   }
 }
