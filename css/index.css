@@ -5,7 +5,7 @@
   --darkBlue: #3d4d6d;
   --grey: #17274680;
   --sText: #5e687b;
-  /* --radius: 4px; */
+  --radius: 8px;
   /* --boxShadow: 0 0 15px 0 rgba(15, 26, 54, 0.05),
     0 30px 30px -3px rgba(15, 26, 54, 0.03); */
 }
@@ -52,19 +52,6 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-
-/* body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  background: var(--gold);
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--pBlue);
-  border-radius: var(--radius);
-} */
 
 a {
   text-decoration: none;
@@ -165,7 +152,18 @@ p {
   p {
     font-size: 18px;
   }
+  body::-webkit-scrollbar {
+    width: 7px;
+  }
 
+  body::-webkit-scrollbar-track {
+    /* background: var(--blue); */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: var(--radius);
+  }
   /* section {
     padding: 50px 0 80px 0;
   }
