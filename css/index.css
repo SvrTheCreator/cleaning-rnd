@@ -6,8 +6,6 @@
   --grey: #17274680;
   --sText: #5e687b;
   --radius: 8px;
-  /* --boxShadow: 0 0 15px 0 rgba(15, 26, 54, 0.05),
-    0 30px 30px -3px rgba(15, 26, 54, 0.03); */
 }
 
 *,
@@ -43,6 +41,7 @@ html {
   -webkit-font-smoothing: antialiased;
   font-family: 'Manrope', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 textarea {
   font-family: 'Manrope', sans-serif;
@@ -84,7 +83,7 @@ h5 {
   font-weight: 600 !important;
   color: var(--darkBlue);
   line-height: 120%;
-  margin: 14px 0 20px;
+  margin: 64px 0 20px;
 }
 h1 {
   font-size: 36px;
@@ -101,16 +100,18 @@ p {
 }
 
 .div-end {
-  display: flex;
+  display: flex !important;
   align-items: end;
+  /* align-self: flex-end; */
 }
+
 .sub-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 180%;
   text-transform: uppercase;
   color: var(--grey);
-  margin-top: 26px;
+  margin-top: 74px;
 }
 .flexSection {
   display: flex;
@@ -130,6 +131,17 @@ p {
   }
   .flexSection_second .container {
     flex-direction: column-reverse;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: 160%;
+    margin: 32px 0 20px;
+  }
+  .sub-title {
+    margin-top: 24px;
   }
 }
 @media (min-width: 900px) {

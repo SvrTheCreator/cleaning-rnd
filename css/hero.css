@@ -1,4 +1,4 @@
-#hero .col-3 {
+#hero .col-2 {
   grid-column: 2 / span 3;
 }
 .hero_title {
@@ -11,7 +11,12 @@
 .hero_title div:first-child p {
   max-width: 680px;
 }
-
+#hero .sub-title {
+  margin-top: 26px;
+}
+#hero h1 {
+  margin-top: 14px;
+}
 #hero a {
   padding: 20px 32px;
 }
@@ -20,8 +25,8 @@
   grid-column: 2 / span 3;
 }
 @media (max-width: 1000px) {
-  #hero .col-3,
-  .hero_bottom .col-2 {
+  #hero .col-2,
+  .hero_bottom .col-1 {
     grid-column: 1;
   }
   .hero_title {

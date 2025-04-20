@@ -21,6 +21,14 @@
     <link rel="stylesheet" href="css/wrapper-grid.css" />
     <link rel="stylesheet" href="css/btns.css" />
     <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/toc.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="section-grid-line">
@@ -32,7 +40,7 @@
             </a>
             <a class="header_item desktop">Посадка жоска</a>
           </div>
-          <div class="col col-3 header_items desktop">
+          <div class="col col-2 header_items desktop">
             <a href="#" class="header_item desktop">Услуги</a>
             <a href="#" class="header_item desktop">О чем то там</a>
             <a href="tel:89996958294" class="header_item desktop">
@@ -71,13 +79,13 @@
         <div class="section-grid-line">
           <div class="container">
             <div class="grid-section">
-              <div class="col col-2">
+              <div class="col col-1">
                 <p class="sub-title">
                   КЛИНИНГОВАЯ КОМПАНИЯ <br />
                   (ИМЯ)
                 </p>
               </div>
-              <div class="col col-3 hero_title">
+              <div class="col col-2 hero_title">
                 <div>
                   <h1>КЛИНИНГ<br />В РОСТОВЕ-НА-ДОНУ</h1>
                   <p>
@@ -106,7 +114,139 @@
           </div>
         </div>
       </section>
+      <div class="toc section-grid-line">
+        <div class="container">
+          <div class="grid-section">
+            <div class="col col-1"><p class="sub-title">Навигация</p></div>
+            <div class="col col-2 btns-arrow_white">
+              <button class="btn-prev">
+                <svg class="icon" width="48" height="6">
+                  <use href="#arrow-line-left"></use>
+                </svg>
+              </button>
+              <button class="btn-next">
+                <svg class="icon" width="48" height="6">
+                  <use href="#arrow-line-left"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="col col-3 swiper">
+              <div class="swiper-wrapper">
+                <a href="#services" class="swiper-slide">Услуги</a>
+                <a href="#" class="swiper-slide">О нас</a>
+                <a href="#" class="swiper-slide">Отзывы</a>
+                <a href="#" class="swiper-slide">Вопросы</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="services">
+        <div class="section-grid-line services_top">
+          <div class="container">
+            <div class="grid-section">
+              <div class="col col-1">
+                <div class="sub-title">Наши услуги</div>
+              </div>
+              <div class="col col-2">
+                <div class="services_title">
+                  <h2>
+                    Клининговые услуги <br />
+                    в Ростове-на-Дону
+                  </h2>
+                </div>
+                <a class="btn-primary" href="#"> Посмотреть все услуги </a>
+              </div>
+              <div class="col col-3 btns-arrow_blue div-end">
+                <button class="btn-prev">
+                  <svg class="icon" width="48" height="6">
+                    <use href="#arrow-line-left"></use>
+                  </svg>
+                </button>
+                <button class="btn-next">
+                  <svg class="icon" width="48" height="6">
+                    <use href="#arrow-line-left"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid-line services_middle">
+          <div class="container">
+            <div class="grid-section">
+              <div class="grid-line"></div>
+              <div class="col col-2 swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesOne.png" alt="" />
+                    </div>
+                    <div class="service_name">
+                      <h3>Уборка квартир</h3>
+                    </div>
+                    <a href="#" class="btn-primary">Заказать клининг</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesTwo.png" alt="" />
+                    </div>
+                    <div class="service_name">
+                      <h3>Генеральная уборка</h3>
+                    </div>
+                    <a href="#" class="btn-primary">Заказать клининг</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesThree.png" alt="" />
+                    </div>
+                    <div class="service_name">
+                      <h3>Мытье окон</h3>
+                    </div>
+                    <a href="#" class="btn-primary">Заказать клининг</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesOne.png" alt="" />
+                    </div>
+                    <div class="service_name">
+                      <h3>Уборка после ремонта</h3>
+                    </div>
+                    <a href="#" class="btn-primary">Заказать клининг</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesTwo.png" alt="" />
+                    </div>
+                    <div class="service_name">
+                      <h3>Химчистка мебели</h3>
+                    </div>
+                    <a href="#" class="btn-primary">Заказать клининг</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid-line services_bottom">
+          <div class="container">
+            <div class="grid-section">
+              <div class="grid-line"></div>
+              <div class="grid-line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="js/burger.js"></script>
+    <script src="js/sliders.js"></script>
+    <svg style="display: none">
+      <symbol id="arrow-line-left" viewBox="0 0 48 6">
+        <path
+          d="M0 3L5 0.113249V5.88675L0 3ZM48 3.5L4.5 3.5V2.5L48 2.5V3.5Z"
+          fill="currentColor"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>

@@ -12,6 +12,7 @@
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   white-space: nowrap;
+  width: 100%;
 }
 .btn::after,
 .btn-primary::after,
@@ -42,4 +43,48 @@
 .btn-outline:hover {
   color: #2f62ad;
   text-decoration: underline;
+}
+
+/* Маленькие кнопки со стрелкой  */
+.btns-arrow_white button,
+.btns-arrow_blue button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 60px;
+  transition: all 0.4s ease-in-out;
+}
+.btns-arrow_white button:last-child,
+.btns-arrow_blue button:last-child {
+  border-left: 0.5px solid #e0e0e0;
+}
+.btns-arrow_white button:last-child svg,
+.btns-arrow_blue button:last-child svg {
+  transform: scaleX(-1);
+}
+/* для белых */
+.btns-arrow_white button:hover {
+  background-color: var(--blue);
+}
+.btns-arrow_white button:hover svg {
+  color: white;
+}
+.btns-arrow_blue button svg {
+  color: var(--white);
+}
+/* для синих */
+.btns-arrow_blue button:hover {
+  background-color: #3f6dc2;
+}
+/* .btns-arrow_blue button:hover svg {
+  background-color: #3f6dc2;
+} */
+
+@media (max-width: 1000px) {
+  .btn,
+  .btn-primary,
+  .btn-outline {
+    padding: 35px 32px;
+  }
 }
