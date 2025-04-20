@@ -19,17 +19,15 @@
 * {
   position: relative;
 }
-html {
-  /* position: relative; */
-  scroll-behavior: smooth;
-  /* overflow-x: hidden; */
-}
+
 svg {
   width: auto;
   height: auto;
   display: block;
 }
-body {
+body,
+html {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   height: 100%;
