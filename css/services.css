@@ -1,9 +1,10 @@
 #services {
   background-color: var(--blue);
 }
-#services .grid-section {
+
+/* #services .grid-section {
   overflow: hidden;
-}
+} */
 #services .sub-title {
   opacity: 0.5;
   color: var(--white);
