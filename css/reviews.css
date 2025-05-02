@@ -1,10 +1,15 @@
 #reviews h2 {
-  padding: 64px 64px 0 64px;
+  padding: 64px;
+  margin-bottom: 0;
+}
+#reviews .btns-arrow_white button {
+  color: #578bec;
 }
 
 #reviews .col-3 div {
   display: flex;
   padding: 64px;
+  margin-top: 74px;
 }
 #reviews .col-3 div img {
   max-width: 140px;
@@ -14,16 +19,11 @@
   padding: 0;
   flex-direction: column;
 }
-#reviews .col-2 {
-  justify-content: space-between;
-  gap: 64px;
-}
 #reviews .col-3 a {
   border-top: 0.5px solid #e0e0e0;
 }
 #reviews .col-3 {
   justify-content: end;
-  /* gap: 64px; */
 }
 #reviews .btns-arrow_white {
   min-height: 96px;
@@ -35,6 +35,7 @@
 #reviews .reviews_bottom .col-2 {
   grid-column: 1 / span 4;
 }
+
 #reviews .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -49,6 +50,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  color: #3d4d6d;
+  line-height: 180%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 .reviews_grade {
   display: flex;
@@ -59,21 +65,42 @@
   width: 16px;
   height: 16px;
 }
+.reviews_text {
+  line-height: 180%;
+}
 #reviews .swiper-slide-active,
 #reviews .swiper-slide-next {
-  border-right: 0.5px solid #e0e0e0;
+  border-left: 0.5px solid #e0e0e0;
 }
-#reviews .swiper-slide-next .grayscale-hover {
+#reviews .swiper-slide .grayscale-hover {
+  height: 400px;
+  overflow: hidden;
+}
+#reviews .swiper-slide .grayscale-hover img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+#reviews .swiper-slide-active .grayscale-hover {
   filter: grayscale(0%);
 }
-@media (max-width: 800px) {
+
+#reviews .container {
+  overflow: hidden;
+}
+#reviews .swiper-slide {
+  width: calc(100% / 4 * 2);
+}
+
+/* @media (max-width: 800px) {
   #reviews .swiper-slide-active .grayscale-hover {
     filter: grayscale(0%) !important;
   }
   #reviews .swiper-slide-next .grayscale-hover {
     filter: grayscale(100%) !important;
   }
-}
+} */
 @media (max-width: 1000px) {
   #reviews .col-2 {
     gap: unset;
@@ -94,7 +121,7 @@
 }
 @media (max-width: 1200px) {
   #reviews h2 {
-    padding: 32px 32px 0 32px !important;
+    padding: 32px !important;
   }
   #reviews .col-3 div {
     padding: 32px !important;

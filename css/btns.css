@@ -64,6 +64,7 @@
 .btns-arrow_blue {
   display: flex;
   /* min-height: 96px; */
+  transition: all 0.4s ease-in-out;
 }
 
 .btns-arrow_white button,
