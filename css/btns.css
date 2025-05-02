@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 23px;
-  padding: 35px 64px;
+  padding: 0 64px;
+  min-height: 96px;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -21,14 +22,24 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url('../assets/images/default-arrow.svg');
+  /* background-image: url('../assets/images/default-arrow.svg'); */
+  mask: url('../assets/images/arrow-for-btn.svg') no-repeat center;
+  -webkit-mask: url('../assets/images/arrow-for-btn.svg') no-repeat center;
+  mask-size: contain;
   background-repeat: no-repeat;
   background-size: contain;
 }
-
+.btn-primary::after {
+  background-color: var(--white);
+  transition: all 0.4s ease-in-out;
+}
+.btn-outline::after {
+  background-color: var(--blue);
+  transition: all 0.4s ease-in-out;
+}
 .btn-primary {
   background-color: var(--blue);
-  color: white;
+  color: var(--white);
 }
 
 .btn-outline {
@@ -41,18 +52,28 @@
 }
 
 .btn-outline:hover {
-  color: #2f62ad;
-  text-decoration: underline;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.btn-outline:hover::after {
+  background-color: var(--white);
 }
 
 /* Маленькие кнопки со стрелкой  */
+.btns-arrow_white,
+.btns-arrow_blue {
+  display: flex;
+  /* min-height: 96px; */
+}
+
 .btns-arrow_white button,
 .btns-arrow_blue button {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 38px 60px;
+  /* padding: 38px 60px; */
+  min-height: 96px;
   transition: all 0.4s ease-in-out;
 }
 .btns-arrow_white button:last-child,
@@ -81,10 +102,10 @@
   background-color: #3f6dc2;
 } */
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .btn,
   .btn-primary,
   .btn-outline {
-    padding: 35px 32px;
+    padding: 0 32px;
   }
 }

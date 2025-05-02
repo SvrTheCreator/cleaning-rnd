@@ -23,12 +23,15 @@
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/toc.css" />
     <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
   </head>
   <body>
     <header class="section-grid-line">
@@ -87,7 +90,10 @@
               </div>
               <div class="col col-2 hero_title">
                 <div>
-                  <h1>КЛИНИНГ<br />В РОСТОВЕ-НА-ДОНУ</h1>
+                  <h1 class="title">
+                    Клининг <br />
+                    в Ростове-на-Дону
+                  </h1>
                   <p>
                     Lorem ipsum dolor sit amet consectetur. Vitae montes turpis
                     integer neque ultrices pellentesque eu sed. Dui egestas
@@ -133,7 +139,7 @@
             <div class="col col-3 swiper">
               <div class="swiper-wrapper">
                 <a href="#services" class="swiper-slide">Услуги</a>
-                <a href="#" class="swiper-slide">О нас</a>
+                <a href="#about-us" class="swiper-slide">О нас</a>
                 <a href="#" class="swiper-slide">Отзывы</a>
                 <a href="#" class="swiper-slide">Вопросы</a>
               </div>
@@ -141,7 +147,7 @@
           </div>
         </div>
       </div>
-      <section id="services">
+      <section id="services" class="section">
         <div class="section-grid-line services_top">
           <div class="container">
             <div class="grid-section">
@@ -150,7 +156,7 @@
               </div>
               <div class="col col-2">
                 <div class="services_title">
-                  <h2>
+                  <h2 class="title">
                     Клининговые услуги <br />
                     в Ростове-на-Дону
                   </h2>
@@ -236,6 +242,512 @@
             </div>
           </div>
         </div>
+      </section>
+      <section id="about-us">
+        <div class="section-grid-line about-us_top">
+          <div class="container">
+            <div class="grid-section">
+              <div class="col col-1">
+                <div class="sub-title">о нашей компании</div>
+              </div>
+              <div class="col col-2">
+                <div>
+                  <h2 class="title">
+                    Клининговая <br />
+                    компания {ИМЯ}
+                  </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Vitae montes turpis
+                    integer neque ultrices pellentesque eu sed. Dui egestas
+                    hendrerit sociis varius et. Tortor lectus tellus posuere
+                    euismod scelerisque vitae augueLorem ipsum dolor sit amet
+                    consectetur. Vitae montes turpis integer neque ultrices
+                    pellentesque eu sed. Dui egestas hendrerit sociis varius et.
+                    Tortor lectus tellus posuere euismod scelerisque vitae
+                    <br />Lorem ipsum dolor sit amet consectetur. Vitae montes
+                    turpis integer neque ultrices pellentesque eu sed. Dui
+                    egestas hendrerit sociis varius et. Tortor lectus tellus
+                    posuere euismod scelerisque vitae
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid-line about-us_bottom">
+          <div class="container">
+            <div class="grid-section">
+              <div class="col col-1">
+                <div>5+</div>
+                <p>Лет на рынке</p>
+              </div>
+              <div class="col col-2">
+                <div>3000+</div>
+                <p>Выполненных заказов</p>
+              </div>
+              <div class="col col-3">
+                <div>4.7</div>
+                <p>рейтинг от наших клиентов</p>
+              </div>
+              <div class="col col-4">
+                <div>1000+</div>
+                <p>Кв.м ежедневной уборки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reviews">
+        <div class="section-grid-line reviews_top">
+          <div class="container">
+            <div class="grid-section">
+              <div class="col col-1">
+                <div class="sub-title">Отзывы о нашей работе</div>
+              </div>
+              <div class="col col-2">
+                <h2 class="title">Отзывы</h2>
+                <div class="btns-arrow_white">
+                  <button class="btn-prev">
+                    <svg class="icon" width="48" height="6">
+                      <use href="#arrow-line-left"></use>
+                    </svg>
+                  </button>
+                  <button class="btn-next">
+                    <svg class="icon" width="48" height="6">
+                      <use href="#arrow-line-left"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div>
+                  <img src="assets/images/avito-icon.png" alt="" />
+                </div>
+                <a href="#" class="btn-outline">Перейти на авито</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid-line reviews_bottom">
+          <div class="container">
+            <div class="grid-section">
+              <div class="col col-2 swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesOne.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesTwo.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesThree.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesOne.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesTwo.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="section-grid-line reviews_bottom">
+          <div class="container">
+            <div class="grid-section">
+              <div class="swiper">
+                <div class="grid-section swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesOne.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesTwo.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesThree.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesOne.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grayscale-hover">
+                      <img src="assets/images/servicesTwo.png" alt="" />
+                    </div>
+                    <div class="reviews_user">
+                      <div class="reviews_name">
+                        <div>
+                          <img src="assets/images/reviewer1.png" alt="" />
+                        </div>
+                        <div>Григорий Гриша</div>
+                      </div>
+                      <div class="reviews_grade">
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                        <div>
+                          <img src="assets/images/star-icon.png" alt="" />
+                        </div>
+                      </div>
+                      <p class="reviews_text">
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae augue Lorem ipsum
+                        dolor sit amet consectetur. Vitae montes turpis integer
+                        neque ultrices pellentesque eu sed. Dui egestas
+                        hendrerit sociis varius et. Tortor lectus tellus posuere
+                        euismod
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </section>
     </main>
     <svg style="display: none">

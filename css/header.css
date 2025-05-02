@@ -1,3 +1,6 @@
+header {
+  border-top: 0.5px solid rgb(224, 224, 224);
+}
 header .container {
   position: relative;
 }
@@ -11,8 +14,13 @@ header .container {
 }
 .burger-nav ul li a {
   color: var(--white);
+  opacity: 0.7;
   font-weight: 700;
   font-size: 16px;
+  transition: all 0.2s ease;
+}
+.burger-nav ul li a:hover {
+  opacity: 1;
 }
 .burger-nav ul li:not(li:last-child) {
   margin-bottom: 10px;

@@ -101,6 +101,9 @@ p {
   align-items: end;
   /* align-self: flex-end; */
 }
+.title {
+  text-transform: uppercase;
+}
 
 .sub-title {
   font-weight: 700;

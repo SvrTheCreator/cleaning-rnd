@@ -19,6 +19,7 @@
 }
 #hero a {
   padding: 20px 32px;
+  min-height: unset;
 }
 .hero_bottom .col-2 {
   padding: 0;
