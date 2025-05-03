@@ -25,13 +25,12 @@
     <link rel="stylesheet" href="css/services.css" />
     <link rel="stylesheet" href="css/about-us.css" />
     <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/faq.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
   </head>
   <body>
     <header class="section-grid-line">
@@ -141,7 +140,7 @@
                 <a href="#services" class="swiper-slide">Услуги</a>
                 <a href="#about-us" class="swiper-slide">О нас</a>
                 <a href="#reviews" class="swiper-slide">Отзывы</a>
-                <a href="#" class="swiper-slide">Вопросы</a>
+                <a href="#faq" class="swiper-slide">Вопросы</a>
               </div>
             </div>
           </div>
@@ -537,6 +536,107 @@
           </div>
         </div>
       </section>
+      <section id="faq">
+        <div class="section-grid-line faq_top">
+          <div class="container">
+            <div class="grid-section">
+              <div class="col col-1">
+                <div class="sub-title">Часто задаваемые вопросы</div>
+              </div>
+              <div class="col col-2">
+                <h2 class="title">
+                  Часто задаваемые <br />
+                  вопросы
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid-line faq_bottom">
+          <div class="container">
+            <div class="grid-section">
+              <div class="grid-line"></div>
+              <div class="col col-2">
+                <div class="accord__cards">
+                  <div class="accord__card">
+                    <div class="accord__card_title">
+                      <h4>Клининг офисных помещений</h4>
+                      <div class="accord__card_title_plus active">
+                        <svg width="32" height="32">
+                          <use xlink:href="#plus-icon"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accord__card_content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accord__card">
+                    <div class="accord__card_title">
+                      <h4>Клининг офисных помещений</h4>
+                      <div class="accord__card_title_plus">
+                        <svg width="32" height="32">
+                          <use xlink:href="#plus-icon"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accord__card_content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accord__card">
+                    <div class="accord__card_title">
+                      <h4>Клининг офисных помещений</h4>
+                      <div class="accord__card_title_plus">
+                        <svg width="32" height="32">
+                          <use xlink:href="#plus-icon"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accord__card_content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accord__card">
+                    <div class="accord__card_title">
+                      <h4>Клининг офисных помещений</h4>
+                      <div class="accord__card_title_plus">
+                        <svg width="32" height="32">
+                          <use xlink:href="#plus-icon"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accord__card_content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Vitae montes
+                        turpis integer neque ultrices pellentesque eu sed. Dui
+                        egestas hendrerit sociis varius et. Tortor lectus tellus
+                        posuere euismod scelerisque vitae
+                      </p>
+                    </div>
+                  </div>
+                  <a href="#" class="btn-outline">Заказать клининнг</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <svg style="display: none">
       <symbol id="arrow-line-left" viewBox="0 0 48 6">
@@ -546,7 +646,15 @@
         />
       </symbol>
     </svg>
+    <svg style="display: none">
+      <symbol id="plus-icon" viewBox="0 0 32 32">
+        <rect x="15" y="3" width="2" height="26" fill="currentColor" />
+        <rect x="3" y="15" width="26" height="2" fill="currentColor" />
+      </symbol>
+    </svg>
+
     <script src="js/burger.js"></script>
+    <script src="js/accordions.js"></script>
     <script src="js/sliders.js"></script>
   </body>
 </html>
