@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/about-us.css" />
     <link rel="stylesheet" href="css/reviews.css" />
     <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/order.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -141,6 +142,8 @@
                 <a href="#about-us" class="swiper-slide">О нас</a>
                 <a href="#reviews" class="swiper-slide">Отзывы</a>
                 <a href="#faq" class="swiper-slide">Вопросы</a>
+                <a href="#order" class="swiper-slide">Заказать</a>
+                <a href="#contacts" class="swiper-slide">Контакты</a>
               </div>
             </div>
           </div>
@@ -549,10 +552,11 @@
                   вопросы
                 </h2>
               </div>
+              <div class="grid-line"></div>
             </div>
           </div>
         </div>
-        <div class="section-grid-line faq_bottom">
+        <div class="section-grid-line faq_middle">
           <div class="container">
             <div class="grid-section">
               <div class="grid-line"></div>
@@ -636,6 +640,73 @@
             </div>
           </div>
         </div>
+        <div class="section-grid-line faq_bottom">
+          <div class="container">
+            <div class="grid-section">
+              <div class="grid-line"></div>
+              <div class="grid-line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="order">
+        <div class="section-grid-line order_top">
+          <div class="container">
+            <div class="grid-section">
+              <div class="col col-1">
+                <div class="sub-title">Заказать клининг</div>
+              </div>
+              <div class="col col-2">
+                <h2 class="title">
+                  Заказать клининг <br />
+                  в ростове-на-дону
+                </h2>
+              </div>
+              <div class="grid-line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid-line order_middle">
+          <div class="container">
+            <div class="grid-section">
+              <div class="grid-line"></div>
+              <form id="orderForm" class="col col-2">
+                <input type="text" name="name" placeholder="Имя" required />
+                <input type="tel" name="phone" placeholder="Телефон" required />
+                <div class="select-wrapper">
+                  <select name="category" required>
+                    <option value="" disabled selected hidden>
+                      Выберите категорию
+                    </option>
+                    <option value="apartment-cleaning">Уборка квартир</option>
+                    <option value="deep-cleaning">Генеральная уборка</option>
+                    <option value="window-cleaning">Мытье окон</option>
+                    <option value="post-renovation-cleaning">
+                      Уборка после ремонта
+                    </option>
+                    <option value="furniture-dry-cleaning">
+                      Химчистка мебели
+                    </option>
+                  </select>
+                </div>
+                <button type="submit" class="btn-primary">
+                  Заказать клининг
+                </button>
+              </form>
+              <div id="responseMessage" style="margin-top: 10px"></div>
+              <div class="grid-line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid-line order_bottom">
+          <div class="container">
+            <div class="grid-section">
+              <div class="grid-line"></div>
+              <div class="grid-line"></div>
+              <div class="grid-line"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <svg style="display: none">
@@ -656,5 +727,41 @@
     <script src="js/burger.js"></script>
     <script src="js/accordions.js"></script>
     <script src="js/sliders.js"></script>
+    <script>
+      document
+        .getElementById('orderForm')
+        .addEventListener('submit', async function (e) {
+          e.preventDefault()
+
+          const form = e.target
+          const formData = {
+            name: form.name.value,
+            phone: form.phone.value,
+            category: form.category.value,
+          }
+
+          try {
+            const response = await fetch('/api/send', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(formData),
+            })
+
+            const result = await response.json()
+
+            const msg = document.getElementById('responseMessage')
+            if (result.success) {
+              msg.textContent = 'Заявка успешно отправлена!'
+              form.reset()
+            } else {
+              msg.textContent =
+                'Ошибка отправки: ' + (result.detail || 'Неизвестно')
+            }
+          } catch (err) {
+            document.getElementById('responseMessage').textContent =
+              'Сервер недоступен.'
+          }
+        })
+    </script>
   </body>
 </html>

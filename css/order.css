@@ -1,0 +1,110 @@
+#order {
+  background-color: var(--blue);
+}
+.order_top .col-2,
+.order_middle .col-2,
+.order_bottom .grid-line:nth-child(2) {
+  grid-column: 2 / span 2;
+}
+.order_top .title {
+  color: var(--white);
+  margin-bottom: 0;
+}
+.order_top .sub-title {
+  color: var(--white);
+  opacity: 0.5;
+}
+.order_bottom .grid-line {
+  min-height: 128px;
+}
+
+.order_middle .col-2 {
+  padding: 0;
+}
+.order_middle form {
+  display: flex;
+  flex-direction: column;
+}
+.order_middle form > *:not(:last-child) {
+  border-bottom: 0.5px solid #e0e0e0;
+}
+/*  */
+/*  */
+/*  */
+.order_middle input:focus,
+.order_middle select:focus {
+  outline: none;
+  border: none;
+  background-color: #3f6dc2;
+  border-bottom: 0.5px solid #e0e0e0;
+}
+.order_middle input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #3f6dc2 inset !important;
+  -webkit-text-fill-color: var(--white) !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.order_middle form > input::placeholder {
+  color: #a5bbe4;
+  opacity: 1;
+}
+.order_middle form > input,
+.select-wrapper select {
+  padding: 0 64px;
+  min-height: 96px;
+  background-color: var(--blue);
+  width: 100%;
+  color: var(--white);
+}
+
+.select-wrapper select {
+  appearance: none;
+}
+
+.select-wrapper select:invalid {
+  color: #a5bbe4;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 64px;
+  transform: translateY(-50%) rotate(90deg);
+  width: 16px;
+  height: 16px;
+  background-color: var(--white);
+  mask: url('../assets/images/arrow-for-btn.svg') no-repeat center;
+  -webkit-mask: url('../assets/images/arrow-for-btn.svg') no-repeat center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  pointer-events: none;
+}
+@media (max-width: 1000px) {
+  .order_top .col-2,
+  .order_middle .col-2 {
+    grid-column: 1;
+  }
+  .order_bottom .grid-line {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .order_middle form > input,
+  .select-wrapper select {
+    padding: 0 32px;
+  }
+  .select-wrapper::after {
+    right: 32px;
+  }
+}

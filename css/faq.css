@@ -4,8 +4,14 @@
 #faq .col-2 {
   min-width: 100%;
 }
-#faq .faq_bottom .col-2 {
+.faq_middle .col-2 {
   padding: 0px;
+}
+.faq_bottom .grid-line {
+  min-height: 128px;
+}
+.faq_bottom .grid-line:last-child {
+  grid-column: 2 / span 3;
 }
 #faq h4 {
   margin: 0;
@@ -14,6 +20,7 @@
   font-size: 16px;
   line-height: 160%;
 }
+
 .accord__cards {
   min-width: 100%;
 }
@@ -48,7 +55,6 @@
 
 .accord__card_title_plus {
   transition: all 0.4s ease-in-out;
-
   color: var(--darkBlue);
 }
 .accord__card_title_plus.active {
@@ -67,5 +73,8 @@
   }
   .accord__card {
     padding: 35px 32px;
+  }
+  .faq_bottom .grid-line {
+    display: none;
   }
 }
