@@ -36,7 +36,8 @@
 .accord__card_content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* transition: max-height 0.4s cubic-bezier(0.075, 0.82, 0.165, 1); */
+  transition: all 0.4s ease-in-out;
 }
 .accord__card_content p {
   margin-top: 16px;
@@ -46,7 +47,8 @@
 }
 
 .accord__card_title_plus {
-  transition: all 0.2s ease;
+  transition: all 0.4s ease-in-out;
+
   color: var(--darkBlue);
 }
 .accord__card_title_plus.active {
